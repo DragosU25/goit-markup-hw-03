@@ -30,8 +30,9 @@ Sections
 ========
 */
 
-body {
-  margin: 0; /* Remove the margin in all browsers. */
+* {
+  margin: 0;
+  border: 0;
 }
 
 /*
@@ -47,6 +48,13 @@ Grouping content
 hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
 }
 
 /*
@@ -259,4 +267,154 @@ Add the correct display in Chrome and Safari.
 
 summary {
   display: list-item;
+}
+/* General styling */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  height: 72px;
+}
+
+.header-address {
+  display: flex;
+  margin-top: 24px;
+  margin-left: 150px;
+}
+.header-address a {
+  margin-left: 40px;
+  text-decoration: none;
+}
+.primary-nav-bar {
+  display: flex;
+  margin-left: 156px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.primary-nav-links {
+  display: flex;
+}
+.primary-nav-links a {
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.primary-section {
+  background: #2e2f42;
+  height: 600px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  width: 496px;
+  text-align: center;
+}
+.primary-section h1 {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 1.12px;
+}
+
+.primary-section button {
+  padding: 16px 32px;
+  margin-top: 2.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+
+.services > li {
+  margin-left: 24px;
+}
+
+.section p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400px;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+}
+
+.section h3 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.4px;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px; /* 111.111% */
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+
+.flex-images {
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.flex-images > li {
+  margin-left: 24px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-informations {
+  text-align: center;
+  margin-top: 32px;
+}
+
+footer {
+  background: #2e2f42;
+  margin-top: 120px;
+}
+
+.footer-content {
+  height: 321px;
+  padding-top: 101.5px;
+  padding-left: 156px;
+  width: 420px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.32px;
+  margin-top: 20px;
+}
+
+.footer-content a {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
