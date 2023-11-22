@@ -381,6 +381,7 @@ summary {
 .team-list {
   display: flex;
   justify-content: space-around;
+  margin-top: 72px;
 }
 
 .team-informations {
