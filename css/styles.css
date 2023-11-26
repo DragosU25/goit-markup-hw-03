@@ -1,421 +1,187 @@
-/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-
-/*
-Document
-========
-*/
-
-/**
-Use a better box model (opinionated).
-*/
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
+:root {
+  --primary-brand: #4d5ae5;
+  --pressed-state: #404bbf;
+  --dark: #2e2f42;
+  --succes: #31d0aa;
+  --text: #434455;
+  --subtle-text: #8e8f99;
+  --accent: #e7e9fc;
+  --modal-overlay: #f4f4fd;
+  --hero-background: #2e2f42;
+  --white-background: #2e2f42;
+  --mmodal-background: #ffffff;
+  --fs-small: 18px;
+  --fs-body: 16px;
+  --fs-title: 56px;
+  --fs-h2: 36px;
+  --fs-medoi: 20px;
+  --fs-extra-small: 12px;
+  --fw-blackt: 800;
+  --fw-boldt: 700;
+  --fw-normalt: 400;
+  --fw-mediumt: 500;
 }
 
-html {
-  /* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji";
-  line-height: 1.15; /* 1. Correct the line height in all browsers. */
-  -webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
-  -moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
-  tab-size: 4; /* 3 */
-}
-
-/*
-Sections
-========
-*/
-
-* {
-  margin: 0;
-  border: 0;
-}
-
-/*
-Grouping content
-================
-*/
-
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
-
-hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-/*
-Text-level semantics
-====================
-*/
-
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr[title] {
-  text-decoration: underline dotted;
-}
-
-/**
-Add the correct font weight in Edge and Safari.
-*/
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo,
-    monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
-Add the correct font size in all browsers.
-*/
-
-small {
-  font-size: 80%;
-}
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-Tabular data
-============
-*/
-
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-
-table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-}
-
-/*
-Forms
-=====
-*/
-
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
-select {
-  text-transform: none;
-}
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
-/**
-Remove the inner border and padding in Firefox.
-*/
-
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
-Restore the focus styles unset by the previous rule.
-*/
-
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
-
-:-moz-ui-invalid {
-  box-shadow: none;
-}
-
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-
-legend {
-  padding: 0;
-}
-
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
-  vertical-align: baseline;
-}
-
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-
-[type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/*
-Interactive
-===========
-*/
-
-/*
-Add the correct display in Chrome and Safari.
-*/
-
-summary {
-  display: list-item;
-}
-/* General styling */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-}
-.header {
-  display: flex;
-  height: 72px;
-}
-
-.header-address {
-  display: flex;
-  margin-top: 24px;
-  margin-left: 150px;
-}
-.header-address a {
-  margin-left: 40px;
-  text-decoration: none;
-}
-.primary-nav-bar {
-  display: flex;
-  margin-left: 156px;
-  text-align: center;
-  margin-top: 24px;
-}
-
-.primary-nav-links {
-  display: flex;
-}
-.primary-nav-links a {
-  margin-left: 40px;
-  text-decoration: none;
-}
-
-.primary-section {
-  background: #2e2f42;
-  height: 600px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.hero-content {
-  width: 496px;
-  text-align: center;
-}
-.primary-section h1 {
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 60px;
-  letter-spacing: 1.12px;
-}
-
-.primary-section button {
-  padding: 16px 32px;
-  margin-top: 2.5rem;
-}
-
-.hide {
-  display: none;
-}
-
-.services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 350px;
-}
-
-.services > li {
-  margin-left: 24px;
-}
-
-.section p {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400px;
-  line-height: 24px;
-  letter-spacing: 0.32px;
-}
-
-.section h3 {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 120% */
-  letter-spacing: 0.4px;
-}
-
-.section h2 {
-  text-align: center;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px; /* 111.111% */
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-}
-
-.flex-images {
-  display: flex;
-  margin-top: 72px;
-  margin-bottom: 72px;
-}
-
-.flex-images > li {
-  margin-left: 24px;
-}
-
-.team-list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 72px;
-}
-
-.team-informations {
-  text-align: center;
-  margin-top: 32px;
-}
-
-footer {
-  background: #2e2f42;
-  margin-top: 120px;
-}
-
-.footer-content {
-  height: 321px;
-  padding-top: 101.5px;
-  padding-left: 156px;
-  width: 420px;
-}
-
-.footer-content p {
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.32px;
-  margin-top: 20px;
+  letter-spacing: 0.02em;
+  background: #ffffff;
 }
-
-.footer-content a {
+.logo {
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
-  line-height: 21px;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+  line-height: 1.17em;
+  letter-spacing: 0.03em;
   text-decoration: none;
+  text-transform: uppercase;
+  color: #4d5ae5;
+}
+.link {
+  text-decoration: none;
+}
+.second-word {
+  color: #2e2f42;
+}
+.list-link {
+  color: #2e2f42;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.list-link:hover {
+  color: #404bbf;
+}
+
+.list-link:focus {
+  color: #404bbf;
+}
+.contact {
+  font-style: normal;
+}
+
+.contact-link {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.contact-link:hover {
+  color: #404bbf;
+}
+.contact-link:focus {
+  color: #404bbf;
+}
+.primary-section {
+  background-color: #2e2f42;
+  text-align: center;
+}
+.primary-title {
+  letter-spacing: 0.02em;
+  font-size: 56px;
+  line-height: 1.07em;
+  color: #ffffff;
+}
+
+.hero-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  color: #fff;
+  cursor: pointer;
+}
+.hero-button:hover {
+  background-color: #404bbf;
+}
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+.list {
+  list-style: none;
+}
+
+.section-title {
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 36px;
+  line-height: 1.11em;
+  color: #2e2f42;
+}
+.team-section {
+  background-color: #f4f4fd;
+}
+.team-member {
+  background-color: #ffffff;
+}
+.sub-title {
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.sub-text {
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+.footer-content {
+  background-color: #2e2f42;
+}
+
+.footer-text {
+  line-height: 1.5em;
+  color: #f4f4fd;
+}
+.footer-content .span {
+  color: #f4f4fd;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  letter-spacing: 0.04em;
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #404bbf;
+  color: #ffffff;
+}
+
+.button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+.portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-text {
+  color: #434455;
 }
