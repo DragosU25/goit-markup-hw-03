@@ -203,14 +203,19 @@ body {
   color: #4d5ae5;
   background-color: #f4f4fd;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
 }
 
 .button:hover {
+  border: 1px solid transparent;
   background-color: #404bbf;
   color: #ffffff;
 }
 
 .button:focus {
+  border: 1px solid transparent;
   color: #ffffff;
   background-color: #404bbf;
 }
@@ -326,4 +331,26 @@ body {
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
+}
+
+.portfolio-section {
+  padding: 96px 0 120px 0;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-content {
+  width: calc(100%-48px) / 3;
 }
