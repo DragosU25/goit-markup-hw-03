@@ -184,6 +184,7 @@ body {
 .footer-text {
   line-height: 1.5em;
   color: #f4f4fd;
+  max-width: 264px;
 }
 .footer-content .span {
   color: #f4f4fd;
@@ -308,4 +309,13 @@ body {
   color: #434455;
   letter-spacing: 0.02em;
   text-align: center;
+}
+
+.footer-content {
+  padding: 100px 0;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
