@@ -116,6 +116,7 @@ body {
   line-height: 1.07em;
   color: #ffffff;
   max-width: 496px;
+  margin: 0 auto;
 }
 
 .hero-button {
@@ -153,6 +154,7 @@ body {
   font-size: 36px;
   line-height: 1.11em;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .team-section {
   background-color: #f4f4fd;
@@ -256,4 +258,17 @@ body {
 
 .section-text {
   width: calc((100% - 72px) / 4);
+}
+
+.images-section {
+  padding-bottom: 120px;
+}
+
+.images-list {
+  display: flex;
+  gap: 24px;
+}
+
+.section-image {
+  width: calc((100% - 48px) / 3);
 }
