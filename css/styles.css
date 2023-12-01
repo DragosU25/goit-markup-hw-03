@@ -133,6 +133,7 @@ body {
   height: 56px;
   display: block;
   margin: auto;
+  border: none;
 }
 .hero-button:hover {
   background-color: #404bbf;
