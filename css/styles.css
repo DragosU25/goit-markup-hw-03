@@ -250,7 +250,7 @@ body {
 
 .first-list {
   display: flex;
-  padding: 24px;
+  gap: 24px;
 }
 
 .section-text {
