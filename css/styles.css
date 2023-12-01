@@ -248,6 +248,10 @@ body {
   padding-bottom: 24px;
 }
 
+.contact .nav-links {
+  margin-left: 245px;
+}
+
 .second-section {
   padding: 120px 0;
 }
