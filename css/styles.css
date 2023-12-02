@@ -173,7 +173,6 @@ body {
   line-height: 1.2em;
   color: #2e2f42;
   margin-bottom: 8px;
-  width: calc((100% - 72px) / 4);
 }
 
 .sub-text {
@@ -281,6 +280,10 @@ body {
   display: flex;
   gap: 24px;
   width: 100%;
+}
+
+.section-text {
+  width: calc((100% - 72px) / 4);
 }
 
 .images-section {
