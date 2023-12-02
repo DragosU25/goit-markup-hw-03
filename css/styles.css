@@ -355,10 +355,6 @@ body {
   margin-bottom: 72px;
 }
 
-.portfolio-container {
-  min-width: 1200px;
-}
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
