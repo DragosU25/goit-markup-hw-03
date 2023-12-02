@@ -250,8 +250,7 @@ body {
 }
 
 .menu-links {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0 24px 0;
 }
 
 .contact .nav-links {
