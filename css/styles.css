@@ -282,7 +282,7 @@ body {
   width: 100%;
 }
 
-.section-text {
+.section-container {
   width: calc((100%-72px) / 4);
 }
 
