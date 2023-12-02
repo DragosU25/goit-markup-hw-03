@@ -251,6 +251,7 @@ body {
 
 .list-link {
   padding: 24px 0;
+  display: inline-block;
 }
 
 .contact .nav-links {
