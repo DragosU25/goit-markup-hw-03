@@ -282,7 +282,7 @@ body {
   gap: 24px;
   width: 100%;
 }
-.section-container {
+.first-list > li {
   width: 100%;
   width: calc((100%-72px) / 4);
 }
