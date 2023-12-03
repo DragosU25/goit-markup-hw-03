@@ -274,7 +274,7 @@ body {
 }
 .section-container {
   width: 100%;
-  width: calc((100%-3 * 24px) / 4);
+  width: 271.5px;
 }
 
 .images-section {
