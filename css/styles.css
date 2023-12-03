@@ -281,9 +281,10 @@ body {
   display: flex;
   gap: 24px;
   width: 100%;
+}
+.section-container {
   width: calc((100% - 72px) / 4);
 }
-
 .images-section {
   padding-bottom: 120px;
 }
