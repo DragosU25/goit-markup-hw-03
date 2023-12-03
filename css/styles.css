@@ -286,6 +286,10 @@ body {
   width: 100%;
   width: calc((100%-72px) / 4);
 }
+
+.second-section-container {
+  width: 1200px;
+}
 .images-section {
   padding-bottom: 120px;
 }
