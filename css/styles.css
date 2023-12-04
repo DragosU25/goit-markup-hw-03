@@ -273,7 +273,8 @@ body {
   width: 100%;
 }
 .section-container {
-  width: calc((100%-48px) / 4);
+  width: 100%;
+  min-width: 264px;
 }
 
 .images-section {
